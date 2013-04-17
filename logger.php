@@ -33,7 +33,7 @@ class Logger {
 		$file_list = array();
 		foreach ($files as $file)
 		{
-			if ($file !== '.' && $file !== '..' && $file !== '.gitignore')
+			if ($file !== '.' && $file !== '..' && $file !== '.gitignore' && !is_dir($file))
 			{
 				$file_list[] = $file;
 			}
