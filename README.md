@@ -5,7 +5,11 @@ Provides simple access to Laravel log files and data.
 
 ##Installation
 
-TODO: Submit to the Laravel bundle library. Until then, create a _logger_ directory within the bundles directory and copy the files into it. Add the bundle to the bundles.php file:
+```
+php artisan bundle:install logger
+```
+
+Then add the bundle to the bundles.php file:
 
 ```
 'logger'  =>  array('auto'=>true)
