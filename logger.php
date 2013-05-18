@@ -63,6 +63,7 @@ class Logger {
 	public static function get_log($date = false)
 	{
 		$log_dir = Config::get('logger::logger.log_dir');
+		$date = str_replace('.log','',$date);
 		if(!$date) $date = date('Y-m-d');
 
 		if(!is_file($log_dir.$date.'.log'))

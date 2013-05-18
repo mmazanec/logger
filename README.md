@@ -19,7 +19,7 @@ Then add the bundle to the bundles.php file:
 To get a list (array) of log files:
 
 ```
-$files = Logger::get_files();
+$files = Logger::get_logs();
 ```
 
 The file list is returned in newset to oldest order. The method can take a numeric parameter to limit the number of files returned. Otherwise, it uses the value specified in the *previous_logs* config value.
